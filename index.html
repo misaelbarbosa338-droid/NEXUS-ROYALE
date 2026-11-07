@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="./" />
+    <title>Dragon Ball Royale 3D</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: #07041a;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        display: grid;
+        place-items: center;
+      }
+      .msg {
+        text-align: center;
+        padding: 20px 32px;
+        border: 1px solid rgba(255,255,255,0.15);
+        background: rgba(255,255,255,0.04);
+      }
+      a {
+        color: #ffd23a;
+      }
+    </style>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const target = new URL('./_t.html', window.location.href).href;
+        window.location.replace(target);
+      });
+    </script>
+  </head>
+  <body>
+    <div class="msg">
+      <p>Carregando o jogo...</p>
+      <p><a href="./_t.html">Clique aqui se a página não abrir automaticamente.</a></p>
+    </div>
+  </body>
+</html>
